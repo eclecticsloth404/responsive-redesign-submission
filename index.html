@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    <link rel="stylesheet" href="style.css">
+    <title>Responsive Redesign</title>
+  </head>
+  <body style="display: block;">
+    <nav class="navbar navbar-expand-lg navBar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1>Responsive Redesign</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 20px !important">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#usability">Usability Problems</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#visual">Visual Redesign</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#responsive">Responsive Redesign</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="overview" style="margin: 50px;">
+      <h2>Overview</h2>
+      <p>The goal of this assignment was to practice the workflow of redesigning a simple website. I had to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes.</p>
+    </div>
+
+    <div id="usability" style="margin: 50px;">
+      <h2>Identifying Usability Problems</h2>
+      <h4>Picking a Webpage</h4>
+      <p>
+        I chose the homepage of <a href="https://theglamkitchen.com/" target="_blank" rel="noreferrer noopener">The Glam Kitchen</a> to redesign. I chose this website because I use it often for recipes and I see some areas of improvement in terms of usability.
+      </p>
+      <div style="display: flex; justify-content: center;">
+        <img src="./images/screenshot.png" style="max-width: 80%; border: 1px solid; border-color: grey;">
+      </div>
+      <h4>Finding Problems</h4>
+      <p>In order to effectively redesign the page, I needed to identify its problems first. Each problem can be categorized as a usability problem, learnability problem, or a memorability problem:</p>
+        <br>
+        <p>Usability:</p>
+        <ul>
+          <li>There are links at the bottom of the page to sign up for the blog, follow the creator on instagram, and follow them on pinterest that I believe to be pretty cluttered. Some of the text in this section is highlighted so they look like buttons but they aren't.</li>
+          <li>The nav bar goes off the page and uses horizontal scroll, but there is no indication of that unless you scroll left or right yourself.</li>
+          <li>There are two icons (pinterest and youtube) at the top of the page that don't actually link to anything.</li>
+          <li>The link to the youtube page is in a different location than the other social media links</li>
+          <li>There is no name for the webpage so it's confusing to use when you have multiple pages open</li>
+        </ul>
+        <p>Learnability:</p>
+        <ul>
+          <li>The interface is pretty simple to learn because each category of recipes is clearly labeled and interactive components look interactive.</li> 
+          <li>There are a lot of items in the nav bar which may confuse new users</li> 
+          <li>The website could benefit from more labels for their sections so new users know what they're looking at (most popular/recent recipes, join our blog/follow, etc.)</li>
+        </ul>
+        <p>Memorability:</p>
+        <ul>
+          <li>The main components of the website are memorable (where to find recipes)</li>
+          <li>The interaction area (blog signup/ social media links) are confusing and difficult to learn to use as well as memorize.</li>
+        </ul>
+      </p>
+      <h4>Accessibility</h4>
+      <p>
+        I used <a href="https://wave.webaim.org/" target="_blank" rel="noreferrer noopener">WebAIM WAVE</a> to detect possible accessibility problems. Based on this report, I found that this website has a few problems: mainly missing alt text for images, empty links, and contrast issues. I agree with these problems because images should always have descriptions for those who cannot see them, and links should have some sort of descriptive text that tells you where it's taking you. The contrast issues are also a big concern because it's difficult to use the website if you can't read the text.
+      </p>
+    </div>
+
+    <div id="visual" style="margin: 50px;">
+      <h2>Visual Redesign</h2>
+      <h4>Low-Fidelity Wireframing</h4>
+      <p>Based on the usability problems I identified, I created low-fidelity wireframes to address the usability problems</p>
+      <iframe src="./assets/lo-fi wireframes.pdf" width="100%" height="800px" style="margin: 20px"></iframe>
+      <h4>Visual Design Style Guide</h4>
+      <p>Before I started my hi-fi prototypes, I created a visual design style guide in Figma that displays the main colors, typography, and the different states of reusable components in the interface.</p>
+      
+      <div style="display: flex; justify-content: center;">
+        <img src="./images/design-guide.png" style="max-width: 80%; border: 1px solid; border-color: grey;">
+      </div>
+
+      <h4>High-Fidelity Prototype</h4>
+      <p>Using Figma, I created a total of 3 high-fidelity prototypes of my webpage. Each design (mobile, tablet, and desktop) is based on my lo-fi prototype for that screen size.</p>
+      <div class="text-center">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5jbWayIa2UPjFMaiFDiu9Y%2Fhi-fi-prototype%3Fnode-id%3D0%253A1%26t%3DvqsPft9MwMGsV9nI-1" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div id="responsive" style="margin: 50px;">
+        <h2>Responsive Redesign</h2>
+        <p>After creating the final high-fidelity prototypes, I redesigned the page using HTML and CSS to correct the problems with the original site. <a href="https://eclecticsloth404.github.io/responsive-redesign/" target="_blank" rel="noreferrer noopener">Click here</a> to view the final redesign.</p>
+        <div style="display: flex; justify-content: center;">
+          <img src="./images/final.png" style="max-width: 80%; border: 1px solid; border-color: grey;">
+        </div>
+      </div>
+  </body>
+
+  <footer class="py-3" style="background-color: #CEE4D6;">
+    <div class="container text-center">
+      <p class="mb-0">
+        I hope you liked it
+      </p>
+    </div>
+  </footer>
+</html>
